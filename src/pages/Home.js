@@ -11,7 +11,8 @@ import PostList from "../components/PostList";
 const Home = (props) => {
 
   return (
-    <Router>
+    // <Router>
+    <>
       <h1 id="title" className="Title" style={{ marginLeft: "20px" }}>
         {props.title}
       </h1>
@@ -22,7 +23,8 @@ const Home = (props) => {
         </Routes>
         <Sidebar ChangeTitle={props.ChangeTitle} />
       </div>
-    </Router>
+      </>
+    // </Router>
 
   );
 };
