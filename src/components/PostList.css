@@ -1,0 +1,12 @@
+/* src/components/PostList.css */
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-list .post {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+  width: calc(33.333% - 2rem);
+}

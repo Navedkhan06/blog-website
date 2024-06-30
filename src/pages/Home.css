@@ -1,0 +1,9 @@
+/* src/pages/Home.css */
+.home {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.home .post-list {
+  flex: 3;
+}

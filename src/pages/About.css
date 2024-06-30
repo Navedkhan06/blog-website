@@ -1,0 +1,14 @@
+/* src/pages/About.css */
+.about {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.about h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1rem;
+}

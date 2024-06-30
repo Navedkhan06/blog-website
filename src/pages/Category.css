@@ -1,0 +1,10 @@
+/* src/pages/Category.css */
+.category {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.category h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
