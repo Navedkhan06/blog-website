@@ -12,18 +12,19 @@ const Home = (props) => {
 
   return (
     // <Router>
-    <>
+    <div className="Home-Container">
       <h1 id="title" className="Title" style={{ marginLeft: "20px" }}>
         {props.title}
       </h1>
       <div className="home">
-        <Routes>
+      <PostList posts={props.posts} />
+        {/* <Routes>
           <Route path="/" element={<PostList posts={props.posts} />} />
-          <Route path="/PersonalStories" element={<PostList posts={props.posts} />} />
-        </Routes>
-        <Sidebar ChangeTitle={props.ChangeTitle} />
+          <Route path="/PersonalStories" element={<>Heyy</>} /> 
+        </Routes> */}
+        <Sidebar ChangeHomeContent={props.ChangeHomeContent} />
       </div>
-      </>
+    </div>
     // </Router>
 
   );

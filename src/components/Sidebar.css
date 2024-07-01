@@ -2,8 +2,8 @@
 .sidebar {
   flex: 1;
   padding: 1rem;
-  background: #f9f9f9;
-  border-left: 1px solid #ddd;
+  background: #729762;
+  /* border-left: 1px solid #ddd; */
 }
 
 .sidebar .widget {
@@ -12,6 +12,7 @@
 
 .sidebar .widget h3 {
   margin-bottom: 1rem;
+  color: #21321a;
 }
 
 .sidebar .widget ul {
@@ -24,7 +25,7 @@
 }
 
 .sidebar .widget ul li a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 

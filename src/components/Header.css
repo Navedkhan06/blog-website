@@ -5,7 +5,7 @@
   align-items: center;  
 }
 .header {
-  background: #333;
+  background: var(--primary-color);
   color: #fff;
   padding: 1rem;
 
@@ -13,6 +13,8 @@
   top: 0px;
   left: 0px;
   right: 0px;
+
+  z-index: 1;
 }
 
 .header .logo {
