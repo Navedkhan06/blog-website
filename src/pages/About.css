@@ -1,14 +1,161 @@
 /* src/pages/About.css */
+:root {
+  --primary-color: #45474B;
+  --secondary-color: #379777;
+  --accent-color: #F4CE14;
+  --background-color: #F5F7F8;
+  --text-color: #2c3e50;
+}
 .about {
   padding: 2rem;
   min-height: 100vh;
 }
 
 .about h1 {
+  text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
+.about h2 {
+  text-align: center;
+}
+
 .about p {
   font-size: 1rem;
+}
+.testimonial-container{
+  background-color: var(--background-color);
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1280px;
+  text-align: center;
+}
+.testimonial-content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.testimonial-title{
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.testimonial-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.testimonial-card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(171, 163, 163);
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1.2rem;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover{
+  transform: scale(1.05);;
+  box-shadow: 0 4px 8px rbga(0,0,0,0.2);
+  border: 1px solid blue;
+}
+
+.testimonial-avatar img{
+  height: 5rem;
+  width: 5rem;
+}
+
+.testimonial-text{
+  color: #555;
+  font-size: 0.875rem;
+}
+
+.testimonial-name{
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.testimonial-desc{
+  font-size: 0.875rem;
+  color: #777;
+}
+
+/* What we offer */
+.faq{
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+.faq h2{
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.accordion{
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+.accordion li{
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after{
+  content: '+';
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.accordion .content{
+  background-color: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+  transform: rotate(135deg);
+}
+
+.faq .email-signup{
+  max-width: 600px;
+  margin: 20px auto 60px;
+}
+
+.faq small{
+  font-size: 15px;
 }
